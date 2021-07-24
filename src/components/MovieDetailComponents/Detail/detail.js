@@ -59,7 +59,7 @@ const Detail = ({ movie }) => {
         {overview?.slice(0, 872)}
         {overview?.length > 872 && "..."}
       </p>{" "}
-      <Poster title="Similar Movies" movies={similarMovie.movieList} />
+      <Poster title="Similar Movies" movies={similarMovie.movieList} type={type} />
     </section>
   );
 };
