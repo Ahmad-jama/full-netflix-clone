@@ -1,0 +1,48 @@
+.accordion {
+  width: 70%;
+  margin: 0.7rem auto;
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+.title_box {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.tilte {
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.symbol {
+  color: #979797;
+  font-size: 3rem;
+  transition: transform 5s ease-in-out;
+  transform-origin: center center;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.content p {
+  padding: 1rem;
+  margin-top: 0.1rem;
+  background-color: #303030;
+  color: white;
+  font-size: 1.5rem;
+}

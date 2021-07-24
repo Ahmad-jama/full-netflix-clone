@@ -1,0 +1,72 @@
+.header {
+  padding: 1.5rem 1.5rem;
+  background-size: cover;
+  background-position-x: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+@media (max-width:570px ){
+.header{
+  height: 300px;
+}
+}
+
+
+
+.header::after {
+  content: "";
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.header::before {
+  content: "";
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  max-height: 300px;
+  margin-bottom: 2rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner a,
+.banner button {
+  border: none;
+  background-color: rgba(80, 80, 80, 0.5);
+  color: white;
+  padding: 0.4rem 1.2rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.banner a,
+.banner button:hover {
+  background-color: rgba(60, 60, 60, 0.5);
+}
+.banner p {
+  margin-top: 1.3rem;
+  max-width: 26rem;
+  font-size: 1.3rem;
+}

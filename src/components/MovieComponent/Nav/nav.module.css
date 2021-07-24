@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.netflix_logo {
+  fill: red;
+  overflow: hidden;
+  padding-top: 0;
+  width: 120px;
+}
+
+nav img {
+  width: 60px;
+}

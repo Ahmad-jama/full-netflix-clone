@@ -1,0 +1,68 @@
+@keyframes loadinganim {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.wrapper {
+  background-color: rgb(0, 0, 0);
+  min-height: 300px;
+  color: red;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+.loading {
+  display: table-cell;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  vertical-align: middle;
+  font-family: helvetica, sans-serif;
+}
+.bulletouter {
+  animation: loadinganim 1s infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.bulletouter .bulletinner {
+  position: relative;
+  left: -5px;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.bulletouter .mask {
+  position: relative;
+  left: -5px;
+  top: -15px;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(45deg);
+}
+.bulletouter .dot {
+  position: relative;
+  left: 33px;
+  top: -32px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+.loading p {
+  padding-top: 23px;
+  font: 20rem;
+}

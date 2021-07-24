@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 17px;
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.75em 0 0.25em;
+}
+
+::-webkit-scrollbar {
+  height: 1px;
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+  border: 1px solid rgb(92, 92, 92);
+}
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  width: 20px;
+}

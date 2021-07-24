@@ -1,0 +1,66 @@
+.box {
+  padding: 4rem 4.5rem;
+  border-bottom: 8px solid rgb(77, 77, 77);
+}
+@media (max-width: 480px) {
+  .box {
+    padding: 4rem 1rem;
+  }
+}
+.container {
+  display: flex;
+  color: white;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.img_container {
+  height: 70%;
+  flex: 0.8;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  max-height: 1005;
+  position: relative;
+  z-index: 2;
+}
+
+.title_box {
+  flex: 1;
+}
+
+.title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.sub_title {
+  font-size: 1.625rem;
+  font-weight: normal;
+  max-width: 89%;
+}
+
+.video {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 75%;
+}
+
+.video video {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block !important;
+    text-align: center;
+  }
+  .sub_title {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.4rem;
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+}
+.netflix_logo {
+  fill: red;
+    overflow: hidden;
+  height: 2.9rem;
+  padding-top: 0;
+}
+
+.sign_btn { 
+  background-color: #e50914;
+   border: none;
+  text-decoration: none;
+}
+
+.lang_btn , .sign_btn{
+  cursor: pointer;
+  border-radius: 5px;
+  
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.lang_btn {
+  background: none;
+   border: 1px solid #fff;
+  margin-right: 1rem;
+ }

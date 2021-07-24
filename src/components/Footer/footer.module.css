@@ -1,0 +1,38 @@
+.footer {
+  padding: 5rem 6rem;
+  color: #757575;
+}
+
+.footer .links {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .footer .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    padding: 5rem 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer .links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer h3 {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.links li {
+  flex: 1;
+  font-size: 13px;
+  text-transform: capitalize;
+}

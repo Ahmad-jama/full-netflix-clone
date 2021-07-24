@@ -1,0 +1,84 @@
+.login {
+  color: white;
+  padding: 2rem 1.5rem;
+  max-width: 1600px;
+  display: block;
+  margin: auto;
+  background-size: cover;
+}
+
+.netflix_logo {
+  fill: red;
+  overflow: hidden;
+  width: 12rem;
+  padding-left: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .login {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/5264b20a-3bca-4db3-9d9f-d23922de99ce/SA-en-20210607-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    padding: 2rem 0 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 450px;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+  }
+  .footer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.footer {
+  color: #757575;
+  padding: 2rem 6rem;
+}
+
+.footer .links {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .footer .links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    border-top: 3px solid rgb(77, 77, 77);
+
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer .links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer h3 {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.links li {
+  flex: 1;
+  font-size: 13px;
+  text-transform: capitalize;
+}

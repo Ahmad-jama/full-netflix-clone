@@ -1,0 +1,41 @@
+.error {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/pages/errors/bg-lost-in-space.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 3rem;
+}
+
+.error p {
+  max-width: 70%;
+  margin: 1.3rem auto;
+}
+
+.error a {
+  color: black;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+.error h2 {
+  font-weight: lighter;
+  border-left: 3px solid red;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.error h2 span {
+  font-weight: bold;
+}

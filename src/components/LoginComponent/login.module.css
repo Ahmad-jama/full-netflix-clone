@@ -1,0 +1,103 @@
+.title {
+  font-size: 34px;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+
+.container {
+  margin: auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 450px;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+  }
+}
+
+.login_form {
+  margin-bottom: 12px;
+}
+
+.login_form input[type="email"],
+.login_form input[type="password"],
+.login_form input[type="text"],
+.submit_btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.login_form input {
+  background: #333;
+}
+.login_form input:focus {
+  background: #454545;
+}
+
+.login_form .submit_btn {
+  background-color: #e50914;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0.4rem;
+  margin-top: 2rem;
+}
+
+.login_form section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_form label {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-left: 0.3rem;
+}
+
+.login_form section button {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+}
+
+.login_form section button:hover {
+  border-bottom: 1px solid;
+}
+
+.facebook_btn {
+  background: none;
+  color: #b3b3b3;
+  border: none;
+  margin-bottom: 0.4rem;
+  font-size: 14px;
+}
+
+.container p {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 0.4rem 0;
+}
+.container p span {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+.container p strong {
+  color: #0071eb;
+  text-decoration: none;
+}
