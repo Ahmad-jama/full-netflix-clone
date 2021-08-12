@@ -1,9 +1,9 @@
-.detail_info{
-  padding: 0 1.5rem
+.detail_info {
+  padding: 0 1.5rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin: 1.5rem 0;
 }
 .desc {
@@ -16,8 +16,12 @@
 }
 
 @media (max-width: 570px) {
+  .desc {
+    display: block;
+  }
   .poster {
-    flex: 0.5 !important;
+    padding-right: 12rem;
+    margin-bottom: 5rem;
   }
   .info {
     flex: 0.5 !important;
@@ -37,6 +41,8 @@
 
 .detail_info p {
   font-size: 1.5rem !important;
+  max-width: 700px;
+  line-height: 1.6;
 }
 
 .info p:last-child {

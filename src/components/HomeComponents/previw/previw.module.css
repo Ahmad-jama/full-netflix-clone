@@ -33,13 +33,13 @@ img {
 }
 
 .title {
-  font-size: 3.125rem;
+  font-size: clamp(2.2rem, 3vw, 3.1rem);
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
 
 .sub_title {
-  font-size: 1.625rem;
+  font-size: clamp(0.5rem, 3vw, 2rem);
   font-weight: normal;
   max-width: 89%;
 }

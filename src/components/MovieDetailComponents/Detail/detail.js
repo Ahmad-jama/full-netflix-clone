@@ -16,7 +16,8 @@ const Detail = ({ movie }) => {
     popularity,
     productionCompanies,
     lang,
-    name
+    name,
+    first_air_date,
   } = movie;
   const apiKey = process.env.REACT_APP_TMDB_API_KEY;
   const paseUrl = "https://api.themoviedb.org/3";
@@ -27,11 +28,12 @@ const Detail = ({ movie }) => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [movieId]);
-   if (similarMovie.loading) return <Loading />;
+  console.log(movie);
+  if (similarMovie.loading) return <Loading />;
   return (
     <section className={styles.detail_info}>
       <h1 className={styles.title}>
-        {title? title:name} {type} {release_date}
+        {title ? title : name} {type} {release_date}
       </h1>
       <div className={styles.video_container}>
         <YoutubeEmbed title={title || name} />
@@ -44,22 +46,26 @@ const Detail = ({ movie }) => {
           <p>title: {title || name}</p>
           <p>language: {lang} </p>
           <p>
-             genres:{" "}
+            genres:{" "}
             {genres?.map((gen) => (
               <span key={gen.id}>{gen.name}</span>
             ))}
           </p>
           <p>production company: {productionCompanies} </p>
           <p> popularity: {popularity} </p>
-          <p>release_date: {release_date}</p>
+          <p>release_date: {release_date || first_air_date}</p>
         </div>
       </div>
       <h1 style={{ fontSize: "3rem", marginBottom: "1.5rem" }}>story</h1>
-      <p>
+      <p style={{ marginBottom: "3rem" }}>
         {overview?.slice(0, 872)}
         {overview?.length > 872 && "..."}
       </p>{" "}
-      <Poster title="Similar Movies" movies={similarMovie.movieList} type={type} />
+      <Poster
+        title="Similar Movies"
+        movies={similarMovie.movieList}
+        type={type}
+      />
     </section>
   );
 };

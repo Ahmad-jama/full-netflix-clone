@@ -4,10 +4,10 @@
   padding: 0;
 }
 html {
-  font-size: 17px;
+  /* font-size:17; */
   background-color: #000;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   html {
     font-size: 15px;
   }
@@ -21,7 +21,7 @@ html {
   html {
     font-size: 9px;
   }
-}
+} */
 
 h2,
 h3,

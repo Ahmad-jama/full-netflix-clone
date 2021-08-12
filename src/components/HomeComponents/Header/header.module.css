@@ -7,7 +7,7 @@
   border-bottom: 8px solid rgb(167, 167, 167);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 772px) {
   .header {
     padding: 0 1rem;
   }
@@ -31,7 +31,7 @@
 }
 
 .title {
-  font-size: 2.6rem;
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
   max-width: 640px;
   margin: auto;
   line-height: 1.2;

@@ -1,5 +1,5 @@
 import "./app.css";
-import { Home, Auth, Movie, MovieDetail, NotFound, AllMovies } from "./pages";
+import { Home, Auth, Movie, MovieDetail, NotFound } from "./pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -12,9 +12,7 @@ function App() {
           <Route path="/browse">
             <Movie />
           </Route>
-          <Route  path='/all-movies'>
-            <AllMovies />
-          </Route>
+
           <Route path="/movie-detail/:movieId/:type">
             <MovieDetail />
           </Route>

@@ -12,18 +12,20 @@ const DetailSection = () => {
 
   const { movieId, type } = useParams();
   const GetMovie = async () => {
-    const respones = await fetch(`${paseUrl}/${type}/${movieId}?api_key=${apiKey}`);
+    const respones = await fetch(
+      `${paseUrl}/${type}/${movieId}?api_key=${apiKey}`
+    );
     const {
       poster_path,
       title,
       name,
+      first_air_date,
       overview,
       release_date,
       genres,
       popularity,
       production_companies,
       spoken_languages,
-      
     } = await respones.json();
     const productionCompanies = production_companies[0]?.name;
     const lang = spoken_languages[0].english_name;
@@ -34,6 +36,7 @@ const DetailSection = () => {
       name,
       lang,
       genres,
+      first_air_date,
       overview,
       release_date,
       popularity,
@@ -42,7 +45,7 @@ const DetailSection = () => {
     });
   };
   React.useEffect(() => {
-  GetMovie();
+    GetMovie();
   }, [movieId]);
   if (!movie) return <Loading />;
   return <Detail movie={movie} />;

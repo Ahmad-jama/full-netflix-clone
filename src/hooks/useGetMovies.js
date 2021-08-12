@@ -6,10 +6,28 @@ const useGetMovie = (url) => {
   const [loading, setLoading] = useState(true);
 
   const mapingOnMovie = (moviesArray) => {
+    console.log(moviesArray);
     return moviesArray.map((movie) => {
-      const { id, poster_path , name, title, overview} = movie;
-      const posterImage = !poster_path? null: imagePaseUrl + poster_path;
-      return { id, posterImage, name, title, overview };
+      const {
+        id,
+        poster_path,
+        backdrop_path,
+        name,
+        title,
+        overview,
+        first_air_date,
+      } = movie;
+      const posterImage = !poster_path ? null : imagePaseUrl + poster_path;
+      const backdropPath = !backdrop_path ? null : imagePaseUrl + backdrop_path;
+      return {
+        id,
+        posterImage,
+        name,
+        title,
+        overview,
+        backdropPath,
+        first_air_date,
+      };
     });
   };
 
@@ -17,10 +35,10 @@ const useGetMovie = (url) => {
     const respones = await fetch(url);
     const { results } = await respones.json();
     const listOfMovie = mapingOnMovie(results);
-     const filterNul = listOfMovie.filter(movie =>{
-      return movie.posterImage !== null
-    })
-     setMovieList(filterNul);
+    const filterNul = listOfMovie.filter((movie) => {
+      return movie.posterImage !== null;
+    });
+    setMovieList(filterNul);
     setLoading(false);
   };
 

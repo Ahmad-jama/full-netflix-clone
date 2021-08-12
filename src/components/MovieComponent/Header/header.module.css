@@ -2,22 +2,20 @@
   padding: 1.5rem 1.5rem;
   background-size: cover;
   background-position-x: center;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   margin-bottom: 2rem;
   overflow: hidden;
+  height: clamp(9rem, 70vw, 40rem);
 }
 
-@media (max-width:570px ){
-.header{
-  height: 300px;
-}
-}
-
-
+/* @media (max-width: 570px) {
+  .header {
+    height: 300px;
+  }
+} */
 
 .header::after {
   content: "";
@@ -48,7 +46,8 @@
 }
 
 .banner h1 {
-  font-size: 3rem;
+  font-size: clamp(1.3rem, 3vw, 3rem);
+  mix-blend-mode: difference;
 }
 
 .banner a,
@@ -58,7 +57,7 @@
   color: white;
   padding: 0.4rem 1.2rem;
   margin: 1rem;
-  font-size: 1.2rem;
+  font-size: clamp(0.1rem, 1vw, 1rem);
   text-decoration: none;
 }
 .banner a,
@@ -68,5 +67,6 @@
 .banner p {
   margin-top: 1.3rem;
   max-width: 26rem;
-  font-size: 1.3rem;
+  font-size: clamp(0.5rem, 3vw, 1.4rem);
+  mix-blend-mode: difference;
 }

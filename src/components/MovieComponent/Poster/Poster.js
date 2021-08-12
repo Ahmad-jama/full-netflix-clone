@@ -8,8 +8,6 @@ const Poster = ({ title, movies, type }) => {
   let startX;
   let scrollLeft;
 
-
-
   useEffect(() => {
     if (postersContainer) {
       postersContainer.current.addEventListener("mousedown", (e) => {
@@ -32,7 +30,8 @@ const Poster = ({ title, movies, type }) => {
         const walk = (x - startX) * 3; //scroll-fast
         postersContainer.current.scrollLeft = scrollLeft - walk;
       });
-    }  }, []);
+    }
+  }, []);
 
   return (
     <section className={styles.poster}>
@@ -41,7 +40,12 @@ const Poster = ({ title, movies, type }) => {
         {movies.map((movie) => {
           return (
             <Link key={movie.id} to={`/movie-detail/${movie.id}/${type}`}>
-              <img src={movie.posterImage} alt={movie.title} />
+              <img
+                width="210"
+                height="316"
+                src={movie.posterImage}
+                alt={movie.title}
+              />
             </Link>
           );
         })}

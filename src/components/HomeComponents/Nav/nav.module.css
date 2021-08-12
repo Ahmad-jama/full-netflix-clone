@@ -9,28 +9,30 @@
 }
 .netflix_logo {
   fill: red;
-    overflow: hidden;
-  height: 2.9rem;
+  overflow: hidden;
+  height: clamp(1.3rem, 5vw, 3rem);
+
   padding-top: 0;
 }
 
-.sign_btn { 
+.sign_btn {
   background-color: #e50914;
-   border: none;
+  border: none;
   text-decoration: none;
 }
 
-.lang_btn , .sign_btn{
+.lang_btn,
+.sign_btn {
   cursor: pointer;
   border-radius: 5px;
-  
+
   color: #fff;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
 }
 
 .lang_btn {
   background: none;
-   border: 1px solid #fff;
+  border: 1px solid #fff;
   margin-right: 1rem;
- }
+}
