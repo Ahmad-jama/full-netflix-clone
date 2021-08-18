@@ -47,7 +47,7 @@
 
 .banner h1 {
   font-size: clamp(1.3rem, 3vw, 3rem);
-  mix-blend-mode: difference;
+  color:#fff
 }
 
 .banner a,
@@ -68,5 +68,5 @@
   margin-top:.5rem;
   max-width: 26rem;
   font-size: clamp(0.8rem, 3vw, 1.4rem);
-  mix-blend-mode: difference;
+  color:#fff
 }
