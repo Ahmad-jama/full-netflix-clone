@@ -57,7 +57,7 @@
   color: white;
   padding: 0.4rem 1.2rem;
   margin: 1rem;
-  font-size: clamp(0.1rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   text-decoration: none;
 }
 .banner a,
@@ -67,6 +67,6 @@
 .banner p {
   margin-top: 1.3rem;
   max-width: 26rem;
-  font-size: clamp(0.5rem, 3vw, 1.4rem);
+  font-size: clamp(0.8rem, 3vw, 1.4rem);
   mix-blend-mode: difference;
 }
