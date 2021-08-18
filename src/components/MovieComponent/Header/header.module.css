@@ -65,7 +65,7 @@
   background-color: rgba(60, 60, 60, 0.5);
 }
 .banner p {
-  margin-top: 1.3rem;
+  margin-top:.5rem;
   max-width: 26rem;
   font-size: clamp(0.8rem, 3vw, 1.4rem);
   mix-blend-mode: difference;
