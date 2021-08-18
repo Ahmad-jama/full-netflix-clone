@@ -56,8 +56,8 @@ const Detail = ({ movie }) => {
           <p>release_date: {release_date || first_air_date}</p>
         </div>
       </div>
-      <h1 style={{ fontSize: "3rem", marginBottom: "1.5rem" }}>story</h1>
-      <p style={{ marginBottom: "3rem" }}>
+      <h1 style={{ fontSize: "clamp(1rem, 10vw,2.5rem) ", marginBottom: "1.5rem" }}>story</h1>
+      <p style={{ marginBottom: "3rem",fontSize:"clamp(.7rem,10vw ,2rem)" }}>
         {overview?.slice(0, 872)}
         {overview?.length > 872 && "..."}
       </p>{" "}
