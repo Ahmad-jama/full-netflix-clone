@@ -40,14 +40,14 @@ height:80vh
 
 .content h2 {
   margin: 1rem 0 2rem;
-font-size:clamp(.8rem,10vw, 2rem) ;
+font-size:clamp(.8rem,4vw, 2rem) ;
   font-weight: normal;
 }
 .content h3 {
   margin: 0 auto 1rem;
   font-weight: normal;
   padding: 0 10%;
-font-size:clamp(.5rem,10vw, 2rem) ;
+font-size:clamp(.5rem,4vw, 2rem) ;
 }
 
 .form {
