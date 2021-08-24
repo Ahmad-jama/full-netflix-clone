@@ -40,7 +40,7 @@
 }
 
 .detail_info p {
-  font-size: 1.5rem !important;
+  font-size: clamp(.6rem,10vw,1.7rem) !important;
   max-width: 700px;
   line-height: 1.6;
 }

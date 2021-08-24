@@ -47,7 +47,7 @@
 
 .banner h1 {
   font-size: clamp(1.3rem, 3vw, 3rem);
-  mix-blend-mode: difference;
+  color:#fff
 }
 
 .banner a,
@@ -57,7 +57,7 @@
   color: white;
   padding: 0.4rem 1.2rem;
   margin: 1rem;
-  font-size: clamp(0.1rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   text-decoration: none;
 }
 .banner a,
@@ -65,8 +65,8 @@
   background-color: rgba(60, 60, 60, 0.5);
 }
 .banner p {
-  margin-top: 1.3rem;
+  margin-top:.5rem;
   max-width: 26rem;
-  font-size: clamp(0.5rem, 3vw, 1.4rem);
-  mix-blend-mode: difference;
+  font-size: clamp(0.8rem, 3vw, 1.4rem);
+  color:#fff
 }
