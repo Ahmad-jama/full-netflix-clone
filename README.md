@@ -43,19 +43,19 @@ This is a Netflix clone application The following requirements are met.
 
 1. ## Home page
 
-   ![Home page](./images/RedmiOne.png)
+   ![Home page](https://i.postimg.cc/fbzsmbdK/redmiOne.png)
 
 2. ## Login page
 
-   ![Login page](./images/RedmiTwo.png)
+   ![Login page](https://i.postimg.cc/VL9LCpTz/RedmiTwo.png)
 
 3. ## Movie page
 
-   ![Movie page](./images/RedmiThree.png)
+   ![Movie page](https://i.postimg.cc/pdwgkXh4/Redmi-Three.png)
 
 4. ## postrs
-   ![posters](./images/RedmiFour.png)
+   ![posters](https://i.postimg.cc/sXCN76bR/Redmi-Four.png)
 5. ## movie detail page
-   ![movie detail page](./images/RedmiFive.png)
+   ![movie detail page](https://i.postimg.cc/SNxt6z1j/Redmi-Five.png)
 
 ---
