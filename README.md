@@ -59,3 +59,9 @@ This is a Netflix clone application The following requirements are met.
    ![movie detail page](https://i.postimg.cc/SNxt6z1j/Redmi-Five.png)
 
 ---
+
+# Authors
+
+👤 Ahmad Jama
+
+- Linkedin: [Ahmad Jama](https://www.linkedin.com/in/ahmad-jama)
